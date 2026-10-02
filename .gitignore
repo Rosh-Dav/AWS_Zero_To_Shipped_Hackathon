@@ -7,6 +7,12 @@
 *.p12
 *.pfx
 credentials.json
+.aws/
+.envrc
+*.tfstate
+*.tfstate.*
+*.tfvars
+cdk.context.json
 
 # Archives and deployment output
 *.zip
@@ -26,9 +32,15 @@ aegismind_frontend/coverage/
 
 # Local editor and OS files
 .idea/
+.vscode/
 *.iml
 .DS_Store
 *.log
+
+# Signing material (Android / iOS)
+*.jks
+*.keystore
+android/key.properties
 
 # Local test request payloads
 aegismind-backend/test-*.json
