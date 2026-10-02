@@ -1,0 +1,19 @@
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Secrets and local deployment inputs
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated archives and local request payloads
+*.zip
+test-*.json
